@@ -58,13 +58,8 @@
             <td>hellenwinsley@gmail.com</td>
         </tr>
     </table>
-    <!--Add a registration form-->
-    <!--Name, email, password, and date fields.
-    A dropdown, radio buttons, and checkboxes.
-    Proper labels and placeholders.
-    Required fields and validation attributes.
-    Ensure proper indentation and commenting.-->
     <form>
+        <!--Added name,email,password and date-->
         <label for="name">Name: </label>
         <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
         <label for="email">Email: </label>
@@ -73,6 +68,7 @@
         <input type="password" id="password" name="password" placeholder="Enter your password" pattern="[0-9,a-z]{7}" required><br><br>
         <label for="date">Date: </label>
         <input type="date" id="date" name="date" required><br><br>
+        <!--Added dropdown, radio buttons and checkboxes-->
         <legend for="gender">Gender: 
             <label for="male">Male </label>
             <input type="radio" id="male" name="gender">
@@ -87,8 +83,12 @@
             <option value="3">JS</option>
             <option value="4">Python</option>
             </select>
-        </label>
-        
+        </label><br>
+        <input type="checkbox" id="terms-and-conditions" name="terms-and-conditions" required>
+        <label for="terms-and-conditions">I accept the terms and conditions</label><br>
+        <input type="checkbox" id="newsletter" name="newsletter">
+        <label for="newsletter">Subscribe to our newsletter</label><br>
+        <input type="submit" value="Submit">
         
     </form>
     
