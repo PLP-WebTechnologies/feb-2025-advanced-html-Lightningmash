@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <!--Add an ordered list with roman numerals-->
+    <ul type="i">
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+        <li>Five</li>
+    </ul>
+    <!--Add an external image from pexels.com-->
+    <img src="https://render.fineartamerica.com/images/rendered/default/canvas-print/8/8/mirror/break/images-medium-5/african-wildlife-map-johan-swanepoel-canvas-print.jpg"
+        alt="African Wildlife Map" width="500" height="500">
+    <!--Add a table of 5 contacts with; name, address, mobile and emails -->
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+
+        </thead>
+        <tr>
+            <td>John Doe</td>
+            <td>123 Main St</td>
+            <td>123-456-7890</td>
+            <td>johndoe@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Jane Doe</td>
+            <td>456 Elm St</td>
+            <td>098-765-4321</td>
+            <td>janedoe@gmail.com></td>
+        </tr>
+        <tr>
+            <td>John Smith</td>
+            <td>789 Oak St</td>
+            <td>456-789-1234</td>
+            <td>johnsmith@gmail.com></td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td>987 Pine St</td>
+            <td>654-321-9876</td>
+            <td>janesmoith@gmail.com></td>
+        </tr>
+        <tr>
+            <td>Hellen Winsley</td>
+            <td>654 Birch St</td>
+            <td>321-654-9870</td>
+            <td>hellenwinsley@gmail.com</td>
+        </tr>
+    </table>
+    <form>
+        <!--Added name,email,password and date-->
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+        <label for="password">Password: </label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" pattern="[0-9,a-z]{7}"
+            required><br><br>
+        <label for="date">Date: </label>
+        <input type="date" id="date" name="date" required><br><br>
+        <!--Added dropdown, radio buttons and checkboxes-->
+        <legend for="gender">Gender:
+            <label for="male">Male </label>
+            <input type="radio" id="male" name="gender">
+            <label for="female">Female </label>
+            <input type="radio" id="female" name="gender">
+        </legend>
+        <label for="programming-languages">What is your favorite programming language?
+            <select name="programming-languages">
+                <option value="0">Select </option>
+                <option value="1">HTML</option>
+                <option value="2">CSS</option>
+                <option value="3">JS</option>
+                <option value="4">Python</option>
+            </select>
+        </label><br>
+        <input type="checkbox" id="terms-and-conditions" name="terms-and-conditions" required>
+        <label for="terms-and-conditions">I accept the terms and conditions</label><br>
+        <input type="checkbox" id="newsletter" name="newsletter">
+        <label for="newsletter">Subscribe to our newsletter</label><br>
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+
+</html>
